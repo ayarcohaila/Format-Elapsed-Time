@@ -1,9 +1,8 @@
-function formatElapsedTime(props) {
-  let inputValue = props.value;
+function formatElapsedTime(inputValue) {
   if (isNaN(inputValue)) {
     return "00:00:00";
   } else {
-    let milliseconds = (inputValue%1000)/100
+    let milliseconds = Math.floor((inputValue%1000)/10)
               , seconds = Math.floor((inputValue/1000)%60)
               , minutes = Math.floor((inputValue/(1000*60))%60)
               , hours = Math.floor(inputValue/(1000*60*60));
