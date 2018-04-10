@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import formatElapsedTime from './timeFormat';
+import formatElapsedTime from './formatElapsedTime';
 
 let temp = {value: 0};
 

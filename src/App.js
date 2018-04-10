@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import TimeFormat from './timeFormat.js';
+import FormatElapsedTime from './formatElapsedTime.js';
 
 class App extends Component {
   render() {
@@ -15,8 +15,8 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <p>
-          <TimeFormat value="129100" /><br/>
-          <TimeFormat value="100000000" /><br/>
+          <FormatElapsedTime value="129100" /><br/>
+          <FormatElapsedTime value="100000000" /><br/>
         </p>
       </div>
     );
